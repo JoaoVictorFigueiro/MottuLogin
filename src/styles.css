@@ -1,1 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+.p-card {
+
+  background-color: #252525;
+  color: #fff;  
+  width: 250px;
+  height: auto;
+  margin: 70px auto 0 auto;
+}
+
+h1 {
+  display: inline;
+  margin: 100px 5px -200px;
+  font-size: 50px;
+  color: rgb(34, 211, 34);
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label {
+  display: block;
+  font-size: 30px;
+  margin: 0 0 0spx;
+
+}
+
+form input {
+  display: block;
+  margin: 0 0 0px; 
+
+}
+
+.botao {
+  display: block;
+  margin: 15px 60px 15px;
+}
+
+body {
+  background-image: url("./assets/fotoeditada.jpg");
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.9;
+ 
+
+}
