@@ -11,7 +11,6 @@ import {ButtonModule} from 'primeng/button';
 import {PasswordModule} from 'primeng/password';
 import { TabelaComponent } from './ListaDeClientes/tabela/tabela.component';
 import { HomeComponent } from './home/home.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +18,7 @@ import { HomeComponent } from './home/home.component';
     TabelaComponent,
     HomeComponent
   ],
+
   imports: [
     CardModule,
     BrowserModule,
@@ -27,7 +27,6 @@ import { HomeComponent } from './home/home.component';
     InputTextModule,
     ButtonModule,
     PasswordModule,
-
   
   ],
   providers: [],

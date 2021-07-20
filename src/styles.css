@@ -55,3 +55,14 @@ body {
  
 
 }
+
+#menuPrincipal {
+  display: inline;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(34, 211, 34);
+  padding: 10px;
+
+}
