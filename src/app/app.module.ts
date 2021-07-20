@@ -9,11 +9,15 @@ import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {PasswordModule} from 'primeng/password';
+import { TabelaComponent } from './ListaDeClientes/tabela/tabela.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    TabelaComponent,
+    HomeComponent
   ],
   imports: [
     CardModule,
@@ -30,3 +34,5 @@ import {PasswordModule} from 'primeng/password';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+

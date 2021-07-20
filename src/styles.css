@@ -10,7 +10,7 @@
   margin: 70px auto 0 auto;
 }
 
-h1 {
+.iconeInicial {
   display: inline;
   margin: 100px 5px -200px;
   font-size: 50px;
@@ -31,7 +31,7 @@ form {
 form label {
   display: block;
   font-size: 30px;
-  margin: 0 0 0spx;
+  margin: 0 0 0px;
 
 }
 
@@ -43,7 +43,7 @@ form input {
 
 .botao {
   display: block;
-  margin: 15px 60px 15px;
+  margin: 25px 60px 0px;
 }
 
 body {
