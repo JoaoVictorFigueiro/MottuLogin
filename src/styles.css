@@ -66,3 +66,17 @@ a {
   padding: 10px;
 
 }
+
+th {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  background-color: #1b8b1f;
+  color: white;
+}
+
+td {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  background-color: #658566;
+  color: white;
+}
