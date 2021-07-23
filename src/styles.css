@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
-.p-card {
+.p-card  {
 
   background-color: #252525;
   color: #fff;  
   width: 250px;
   height: auto;
-  margin: 70px auto 0 auto;
+  margin: 90px auto 0 auto;
 }
 
 .iconeInicial {
@@ -80,3 +80,8 @@ td {
   background-color: #658566;
   color: white;
 }
+
+.cadastro {
+  background-color: green;
+}
+

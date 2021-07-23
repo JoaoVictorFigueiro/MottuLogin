@@ -1,27 +1,37 @@
-.full-width {
-  width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+form {
+border: solid;
+border-radius: 1%;
+ display: block;
+ background-color: #252525;
+ padding: 15px;
+ margin: 90px 200px 0px;
 }
 
-.shipping-card {
-  min-width: 120px;
-  margin: 20px auto;
+input {
+	display: block;
+	margin: 0 130px 10px;
+	padding: 10px 25px;
+	width: 50%;
 }
 
-.mat-radio-button {
-  display: block;
-  margin: 5px 0;
+label {
+  display:block;
+	font-size: 30px;
+  color: aliceblue;
+	margin: 0 130px 10px;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-}
+button {
+  width:25%;
+	padding: 15px 0;
+	background: rgb(50, 153, 9);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  margin: 0 195px 0;
+} 
 
-.col {
-  flex: 1;
-  margin-right: 20px;
-}
-
-.col:last-child {
-  margin-right: 0;
-}
