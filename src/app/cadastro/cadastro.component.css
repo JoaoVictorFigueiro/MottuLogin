@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 form {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 border: solid;
 border-radius: 1%;
  display: block;
@@ -35,3 +36,7 @@ button {
   margin: 0 195px 0;
 } 
 
+span {
+	color: red;
+	margin: 0 200px 15px;
+}

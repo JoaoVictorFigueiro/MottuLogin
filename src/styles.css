@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
 
 .p-card  {
-
   background-color: #252525;
   color: #fff;  
   width: 250px;
@@ -17,7 +16,6 @@
   color: rgb(34, 211, 34);
   font-family: 'Open Sans Condensed', sans-serif;
 }
-
 
 main {
   width: 960px;
@@ -53,7 +51,6 @@ body {
   background-size: cover;
   opacity: 0.9;
  
-
 }
 
 #menuPrincipal {
@@ -69,14 +66,12 @@ a {
 
 th {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25px;
   background-color: #1b8b1f;
   color: white;
 }
 
 td {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
   background-color: #658566;
   color: white;
 }
@@ -84,4 +79,6 @@ td {
 .cadastro {
   background-color: green;
 }
+
+
 

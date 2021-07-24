@@ -1,30 +1,60 @@
 <div>
   <main>
       <form [formGroup]="thismeuFormGroup">
+
           <label for="usuario">Nome</label>
           <input type="text" id="usuario" 
           placeholder="Nome"
           formControlName="nome"/>
+          <ng-container *ngIf="thismeuFormGroup.controls.nome.touched">
+          <span *ngIf="thismeuFormGroup.controls.nome.errors">
+            Campo obrigatório
+          </span>
+          </ng-container>
+            
+     
 
           <label for="placa">Placa</label>
-          <input type="text" id="placa"
-          placeholder="Placa da moto"
-          formControlName="placa" />
+          <input type="text" id="placa" 
+          placeholder="Placa da Moto"
+          formControlName="placa"/>
+          <ng-container *ngIf="thismeuFormGroup.controls.placa.touched">
+          <span *ngIf="thismeuFormGroup.controls.placa.errors">
+            Campo obrigatório
+          </span>
+          </ng-container>
+
 
           <label for="email">E-mail</label>
           <input type="email" id="email" 
-          placeholder="exemplo@gmail.com"
+          placeholder="Exemplo@gmail.com"
           formControlName="email"/>
+          <ng-container *ngIf="thismeuFormGroup.controls.email.touched">
+          <span *ngIf="thismeuFormGroup.controls.email.errors">
+            Campo obrigatório
+          </span>
+          <span *ngIf="thismeuFormGroup.controls.email.errors?.email">
+            E-mail inválido
+          </span>
+          </ng-container>
 
           <label for="data">Data de nascimento</label>
           <input type="date" id="data" />
-
+    
           <label for="telefone">Telefone</label>
-          <input type="tel" id="telefone" 
+          <input type="tel" id="telefone"
           placeholder="(XX) XXXXX-XXXX"
           formControlName="telefone"/>
+          <ng-container *ngIf="thismeuFormGroup.controls.telefone.touched">
+          <span *ngIf="thismeuFormGroup.controls.telefone.errors">
+            Campo obrigatório
+          </span>
+          <span *ngIf="thismeuFormGroup.controls.email.errors?.phone">
+            E-mail inválido
+          </span>
+        </ng-container>
 
-          <button>Cadastrar</button>
-      </form>
+        <button (click)="validar()" type="button">Validar</button>
+       </form>
     </main>
 </div>

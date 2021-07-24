@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,13 +7,15 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
-  meuFormGroup!: FormGroup;
+
+  meuFormGroup: FormGroup | undefined;
 
   constructor(private formBuilder: FormBuilder) {}
 
   thismeuFormGroup = this.formBuilder.group({
 
     nome: ['', Validators.required],
+    data: ['', Validators.required],
     placa: ['', Validators.required],
     telefone: ['', Validators.required],
     email: ['', [
@@ -23,10 +25,23 @@ export class CadastroComponent {
 });
 
 postar() {
-  if (!this.meuFormGroup.valid) {
+  if (!this.thismeuFormGroup.valid) {
     console.log("Formulário inválido");
     return;
   }
-  console.log("Formulário válido", this.meuFormGroup.value);
+  console.log("Formulário válido", this.thismeuFormGroup.value);
+
+  console.log(this.thismeuFormGroup.value);
+  
+}
+
+validar() {
+  console.log(this.thismeuFormGroup);
+
 }
 }
+
+
+
+
+
