@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-cadastro',
@@ -7,11 +7,26 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
+  meuFormGroup!: FormGroup;
 
+  constructor(private formBuilder: FormBuilder) {}
 
-  constructor(private fb: FormBuilder) {}
+  thismeuFormGroup = this.formBuilder.group({
 
-  onSubmit(): void {
-    alert('Thanks!');
+    nome: ['', Validators.required],
+    placa: ['', Validators.required],
+    telefone: ['', Validators.required],
+    email: ['', [
+        Validators.required,
+        Validators.email
+    ]]
+});
+
+postar() {
+  if (!this.meuFormGroup.valid) {
+    console.log("Formulário inválido");
+    return;
   }
+  console.log("Formulário válido", this.meuFormGroup.value);
+}
 }

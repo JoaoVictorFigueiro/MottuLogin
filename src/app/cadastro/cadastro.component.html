@@ -1,20 +1,28 @@
 <div>
   <main>
-      <form>
+      <form [formGroup]="thismeuFormGroup">
           <label for="usuario">Nome</label>
-          <input type="text" id="usuario"/>
+          <input type="text" id="usuario" 
+          placeholder="Nome"
+          formControlName="nome"/>
 
           <label for="placa">Placa</label>
-          <input type="text" id="placa" />
+          <input type="text" id="placa"
+          placeholder="Placa da moto"
+          formControlName="placa" />
 
           <label for="email">E-mail</label>
-          <input type="email" id="email" />
+          <input type="email" id="email" 
+          placeholder="exemplo@gmail.com"
+          formControlName="email"/>
 
           <label for="data">Data de nascimento</label>
           <input type="date" id="data" />
 
           <label for="telefone">Telefone</label>
-          <input type="tel" id="telefone" />
+          <input type="tel" id="telefone" 
+          placeholder="(XX) XXXXX-XXXX"
+          formControlName="telefone"/>
 
           <button>Cadastrar</button>
       </form>
