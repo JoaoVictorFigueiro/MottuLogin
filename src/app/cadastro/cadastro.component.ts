@@ -8,7 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class CadastroComponent {
 
-  meuFormGroup: FormGroup | undefined;
+  meuFormGroup!: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
 
@@ -24,21 +24,23 @@ export class CadastroComponent {
     ]]
 });
 
-postar() {
+cadastrar() {
   if (!this.thismeuFormGroup.valid) {
     console.log("Formulário inválido");
     return;
   }
+
   console.log("Formulário válido", this.thismeuFormGroup.value);
 
   console.log(this.thismeuFormGroup.value);
   
-}
+  }
 
 validar() {
   console.log(this.thismeuFormGroup);
 
-}
+  }
+
 }
 
 

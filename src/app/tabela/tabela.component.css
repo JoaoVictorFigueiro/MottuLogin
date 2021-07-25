@@ -1,11 +1,20 @@
 .full-width-table {
   width: 100%;
 }
-
 th {
-  color: with;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  background-color: #1b8b1f;
+  color: white;
 }
 
 td {
-  color: with; 
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  background-color: #252525;
+  color: white;
+}
+
+mat-form-field {
+  background-color: rgb(210, 210, 221);
 }

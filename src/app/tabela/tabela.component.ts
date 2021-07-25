@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTable } from '@angular/material/table';
@@ -18,13 +19,39 @@ export class TabelaComponent implements AfterViewInit {
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
   displayedColumns = ['id','name','telefone','email', 'data',];
 
-  constructor() {
+  formGroupPesquisa!: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) {
     this.dataSource = new TabelaDataSource();
   }
 
   ngAfterViewInit(): void {
+    
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
     this.table.dataSource = this.dataSource;
   }
+
+  ngOnInit() {
+    this.formGroupPesquisa = this.formBuilder.group ({
+      name: [null],
+    });
+      this.listarItens();
+  }
+
+  limparPesquisa() {
+    this.formGroupPesquisa.reset();
+    this.listarItens();
+  }
+
+  listarItens () {
+    if (this.formGroupPesquisa.value.name) {
+    }
+  }
+  
+
+
 }
+
+
+

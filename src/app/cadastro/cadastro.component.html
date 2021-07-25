@@ -49,12 +49,13 @@
           <span *ngIf="thismeuFormGroup.controls.telefone.errors">
             Campo obrigatório
           </span>
-          <span *ngIf="thismeuFormGroup.controls.email.errors?.phone">
-            E-mail inválido
-          </span>
         </ng-container>
 
-        <button (click)="validar()" type="button">Validar</button>
-       </form>
+        <button (click)="cadastrar()"
+        [disabled]="!thismeuFormGroup.valid">
+        Cadastrar 
+        </button>
+      
+      </form>
     </main>
 </div>
