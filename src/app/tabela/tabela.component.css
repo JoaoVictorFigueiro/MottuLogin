@@ -16,5 +16,35 @@ td {
 }
 
 mat-form-field {
-  background-color: rgb(210, 210, 221);
+  display: block;
+	width:18%;
+  background-color: #f8f8f8;
+  border: none;
+	border-radius: 5px;
+
+}
+
+.botaoPesquisar {
+  display: inline;
+	width:8%;
+	background: rgb(47, 207, 26);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+  margin: 10px 10px 10px;
+}
+
+.botaoLimpar {
+  display: inline;
+	width:8%;
+	background: rgb(238, 38, 38);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
 }
