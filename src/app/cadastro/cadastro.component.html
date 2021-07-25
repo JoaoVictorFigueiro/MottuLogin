@@ -1,5 +1,6 @@
 <div>
   <main>
+    
       <form [formGroup]="thismeuFormGroup">
 
           <label for="usuario">Nome</label>
@@ -51,11 +52,13 @@
           </span>
         </ng-container>
 
-        <button (click)="cadastrar()"
+        <button class="botaoCadastrar"(click)="cadastrar()"
         [disabled]="!thismeuFormGroup.valid">
         Cadastrar 
         </button>
+
+        <button class="botaoDeletar"type="reset">Limpar dados</button>
       
-      </form>
+      </form> 
     </main>
 </div>
