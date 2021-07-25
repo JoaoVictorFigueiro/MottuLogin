@@ -2,10 +2,10 @@
   
   <form [formGroup]="formGroupPesquisa" (ngOnInit)="formGroupPesquisa.valid && listarItens()">
     <mat-form-field>
-    <input matInput placeholder="Nome" formControlName="name" autocomplete="off"/>
+    <input matInput placeholder="Pesquisar" formControlName="name" autocomplete="off"/>
   </mat-form-field>
-      <button mat-raised-button color="primary">Pesquisar</button>
-      <button mat-raised-button type="button" color="secondary" (click)="limparPesquisa()">Limpar</button>
+      <button class="botaoPesquisar" color="primary">Pesquisar</button>
+      <button class="botaoLimpar" type="button" color="secondary" (click)="limparPesquisa()">Limpar</button>
   </form>
 
   <table class="tabelaClientes" mat-table class="full-width-table" matSort aria-label="Elements">
