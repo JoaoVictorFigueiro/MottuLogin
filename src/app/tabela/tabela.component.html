@@ -4,7 +4,7 @@
     <mat-form-field>
     <input matInput placeholder="Pesquisar" formControlName="name" autocomplete="off"/>
   </mat-form-field>
-      <button class="botaoPesquisar" color="primary">Pesquisar</button>
+      <button class="botaoPesquisar" (click)="listarItens()" color="primary">Pesquisar</button>
       <button class="botaoLimpar" type="button" color="secondary" (click)="limparPesquisa()">Limpar</button>
   </form>
 

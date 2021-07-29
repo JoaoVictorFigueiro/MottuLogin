@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,39 +7,40 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
-
+  
   meuFormGroup!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {}
+  constructor(private formBuilder: FormBuilder) { 
+    this.meuFormGroup = this.formBuilder.group({
 
-  thismeuFormGroup = this.formBuilder.group({
-
-    nome: ['', Validators.required],
-    data: ['', Validators.required],
-    placa: ['', Validators.required],
-    telefone: ['', Validators.required],
-    email: ['', [
+      nome: ['', Validators.required],
+      data: ['', Validators.required],
+      placa: ['', Validators.required],
+      telefone: ['', Validators.required],
+      email: ['', [
         Validators.required,
         Validators.email
-    ]]
-});
+      ]]
+    });
+    
+  }
 
 cadastrar() {
-  if (!this.thismeuFormGroup.valid) {
+  if (!this.meuFormGroup.valid) {
     console.log("Formulário inválido");
     return;
   }
 
-  console.log("Formulário válido", this.thismeuFormGroup.value);
+  console.log("Formulário válido", this.meuFormGroup.value);
 
-  console.log(this.thismeuFormGroup.value);
-  
-  }
+  console.log(this.meuFormGroup.value);
+
+}
 
 validar() {
-  console.log(this.thismeuFormGroup);
+  console.log(this.meuFormGroup);
 
-  }
+}
 
 }
 

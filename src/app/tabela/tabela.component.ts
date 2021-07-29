@@ -45,6 +45,7 @@ export class TabelaComponent implements AfterViewInit {
   }
 
   listarItens () {
+    console.log (this.formGroupPesquisa.value.name)
     if (this.formGroupPesquisa.value.name) {
     }
   }
