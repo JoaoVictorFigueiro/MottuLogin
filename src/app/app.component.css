@@ -5,3 +5,10 @@ a {
   font-style: 'Open Sans Condensed', sans-serif;
   text-decoration: none;
 }
+
+.menu {
+  margin: 15px 15px 15px;
+  font-size: 45px;
+  color: rgb(34, 211, 34);
+  font-family: 'Open Sans Condensed', sans-serif;
+}

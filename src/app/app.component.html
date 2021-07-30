@@ -1,13 +1,13 @@
-<h1 class="iconeInicial">Mottu</h1>
+<button class="menu" mat-button [matMenuTriggerFor]="menu">Menu</button>
+
+<mat-menu #menu="matMenu">
+        <button class="login" routerLink="/login" routerLinkActive="active" mat-menu-item>Login</button>
+        <button routerLink="/cadastro" routerLinkActive="active" mat-menu-item>Cadastro</button>
+        <button routerLink="/tabela" routerLinkActive="active" mat-menu-item>Tabela</button>
+
+</mat-menu>
+
 <nav id="menuPrincipal">
         <a routerLink="/home" routerLinkActive="active">Home</a>
-        <a routerLink="/cadastro" routerLinkActive="active">Cadastro</a>
-        <a class="login"routerLink="/login" routerLinkActive="active">Login</a>
-        <a routerLink="/tabela" routerLinkActive="active">Tabela</a>
-
-
-
 </nav>
 <router-outlet></router-outlet>
-
-
