@@ -1,16 +1,31 @@
     <div class="p-grid p-justify-center">
     <p-card >
         <main>
-            <form class=menuLogin>
-                <label class="labelLogin" for="usuario">E-mail</label>
-                <input type="text" pInputText id="usuario"/>
 
-                <label class="labelLogin" for="senha">Senha</label>
-                <input class="inputLogin" type="password" pInputText pPassword  id="senha" />
+            <form [formGroup]="loginFormGroup">
 
-                <button class="botao" pButton type="submit" label="Acessar" ></button>
+                <label for="email">E-mail</label>
+                <input type="email" pInputText id="email" placeholder="E-mail" formControlName="email"/>
+                <ng-container *ngIf="loginFormGroup.controls.email.touched">
+                  <span *ngIf="loginFormGroup.controls.email.errors">
+                    Campo obrigatório!
+                  </span>
+                  <span *ngIf="loginFormGroup.controls.email.errors?.email">
+                    E-mail inválido
+                  </span>
+                </ng-container>
 
-              <a href="https://tenor.com/view/cat-cute-animals-gif-9438244">Esqueci a senha</a>
+                <label for="senha">Senha</label>
+                <input type="password" pInputText id="senha" placeholder="Senha" formControlName="senha"/>
+                <ng-container *ngIf="loginFormGroup.controls.senha.touched">
+                  <span *ngIf="loginFormGroup.controls.senha.errors">
+                    Campo obrigatório!
+                  </span>
+                </ng-container>
+
+                <button [disabled]= "loginFormGroup.invalid" class="botao" pButton type="submit" label="Acessar" ></button>
+
+              <a href="https://tenor.com/view/cat-cute-animals-gif-9438244">Esqueci a Senha</a>
             </form>
         </main>
    </p-card>

@@ -7,10 +7,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./cadastro.component.css']
 })
 export class CadastroComponent {
-  
+
   meuFormGroup!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { 
+  constructor(private formBuilder: FormBuilder) {
     this.meuFormGroup = this.formBuilder.group({
 
       nome: ['', Validators.required],
@@ -22,7 +22,7 @@ export class CadastroComponent {
         Validators.email
       ]]
     });
-    
+
   }
 
 cadastrar() {
