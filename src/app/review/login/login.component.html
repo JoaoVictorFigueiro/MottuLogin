@@ -7,7 +7,7 @@
                 <label for="email">E-mail</label>
                 <input type="email" pInputText id="email" placeholder="E-mail" formControlName="email"/>
                 <ng-container *ngIf="loginFormGroup.controls.email.touched">
-                  <span *ngIf="loginFormGroup.controls.email.errors">
+                  <span *ngIf="loginFormGroup.controls.email.errors?.required">
                     Campo obrigatório!
                   </span>
                   <span *ngIf="loginFormGroup.controls.email.errors?.email">

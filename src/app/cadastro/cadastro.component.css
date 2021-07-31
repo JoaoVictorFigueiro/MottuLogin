@@ -34,7 +34,7 @@ label {
 	border-radius: 5px;
 	cursor: pointer;
 	margin: 20px 200px 0;
-} 
+}
 
 .botaoDeletar {
 	display: inline;
@@ -51,5 +51,5 @@ label {
 }
 span {
 	color: red;
-	margin: 0 200px 0;
+	margin: 0 130px 0;
 }
