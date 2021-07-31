@@ -22,14 +22,16 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatMenuModule} from '@angular/material/menu'; 
+import {MatMenuModule} from '@angular/material/menu';
+import { AuthenticationComponent } from './home/authentication/authentication.component'; 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
     TabelaComponent,
-    CadastroComponent
+    CadastroComponent,
+    AuthenticationComponent
   ],
 
   imports: [
