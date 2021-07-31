@@ -24,4 +24,19 @@ export class LoginComponent {
     });
 
 }
+acessar(){
+  if(!this.loginFormGroup.valid){
+    console.log ("Formulario Valido!");
+    return;
+  }
+console.log("Formulario Valido!", this.loginFormGroup.value);
+
+console.log(this.loginFormGroup.value);
+}
+
+autenticar(){
+    console.log (this.loginFormGroup)
+
+
+}
 }

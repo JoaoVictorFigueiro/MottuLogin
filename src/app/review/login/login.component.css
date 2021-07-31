@@ -1,12 +1,37 @@
+form{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 a {
   color:rgb(34, 238, 34);
   text-decoration: none;
   position: absolute;
+  margin: 0 35px 0;
 
   }
   span {
-    color: red;
-   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: red;
+  margin: 0 10px 0;
+
 
 
   }
+.botao{
+  display: block;
+	width:10%;
+	background: rgb(50, 153, 9);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 20px 56px 10px;
+}
+label{
+  margin: 25px 0 25px;
+}
+input{
+  margin: 25px 0 25px;
+}
+
